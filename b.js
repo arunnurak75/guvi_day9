@@ -8,8 +8,8 @@ request1.onload=function()
     if(request1.status==200)
     {
         let c1=JSON.parse( request1.responseText)
-        let Population = c1.filter((coun)=>(coun.population<200000));
-    console.log(Population);
+        let population = c1.filter((coun)=>(coun.population<200000));
+    console.log(population);
     }
 else{
 request1.onerror=function(){

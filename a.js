@@ -8,8 +8,8 @@ request.onload=function()
     if(request.status==200)
     {
         let c=JSON.parse( request.responseText)
-        let Asian = c.filter((con)=>(con.region ==="Asia"));
-        console.log(Asian);
+        let Asiancontinent = c.filter((con)=>(con.region ==="Asia"));
+        console.log(Asiancontinent);
     }
 else{
 request.onerror=function(){
